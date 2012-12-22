@@ -1,0 +1,33 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                    http://www.springframework.org/schema/beans/spring-beans.xsd
+                    http://www.springframework.org/schema/security 
+                    http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http use-expressions="true">
+		<intercept-url pattern="/authentication/*" access="permitAll" />
+		<intercept-url pattern="/products/**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/categories/**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/carts/**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/users/**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/reports/**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/ads/**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/comments/**" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/manufacturers/**" access="hasRole('ROLE_ADMIN')" />
+		
+		<form-login login-page="/authentication/login/"
+			default-target-url="/products/list?page=1"
+			authentication-failure-url="/authentication/login/failed" login-processing-url="/authentication/login/j_spring_security_check"/>
+		<logout logout-success-url="/authentication/login/" logout-url="/authentication/logout"/>
+	</http>
+
+	<authentication-manager>
+		<authentication-provider>
+			<user-service>
+				<user name="vuhailuyen" password="vuhailuyen1991" authorities="ROLE_ADMIN" />
+			</user-service>
+		</authentication-provider>
+	</authentication-manager>
+</beans:beans>   

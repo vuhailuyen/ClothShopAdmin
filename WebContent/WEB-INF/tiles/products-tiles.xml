@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition name="sanpham" extends="template" >
+        <put-attribute name="sidebar" value="/_pages/product/sidebar_sp.jsp" />
+        <put-attribute name="navbar" value="/_pages/product/navbar_sp.jsp" />
+        <put-attribute name="content" value="sanpham_content" type="definition"/>
+        <put-attribute name="js" value="sanpham_js" type="definition"/>     
+    </definition>
+    <definition name="sanpham_content" template="/_pages/templates/templates_defs/sanpham_content_template.jsp">
+    	<put-attribute name="filter" value="/_pages/product/content_sanpham_filter.jsp"/>
+    	<put-attribute name="list" value="/_pages/product/content_sanpham_list.jsp"/>
+    	<put-attribute name="paging" value=""/>
+    </definition>
+    
+    <definition name="sanpham_content_view" extends="sanpham_content">
+    	<put-attribute name="paging" value="/_pages/product/content_sp_view_paging.jsp"/>
+    </definition>
+    	
+    <definition name="sanpham_content_filter" extends="sanpham_content">
+    	<put-attribute name="paging" value="/_pages/product/content_sp_filter_paging.jsp"/>
+    </definition>
+    
+    
+    <definition name="sanpham_view" extends="sanpham">
+    	<put-attribute name="content" value="sanpham_content_view" type="definition"/>
+    </definition>
+    <definition name="sanpham_filter" extends="sanpham">
+    	<put-attribute name="content" value="sanpham_content_filter" type="definition"/>
+    </definition>
+    
+    <definition name="sanpham_js" extends="js_template">
+    	<put-attribute name="js_child" value="/_pages/product/product_js.jsp" />
+    </definition>
+    
+    <definition name="sanpham_add" extends="sanpham" >
+        <put-attribute name="content" value="/_pages/product/content_sp_add.jsp"/>      
+    </definition>  
+    <definition name="sanpham_update" extends="sanpham" >
+        <put-attribute name="content" value="/_pages/product/content_sp_update.jsp"/>     
+    </definition>  
+    
+</tiles-definitions>

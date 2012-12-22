@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+       
+	<bean name="tilesViewResolver" class="org.springframework.web.servlet.view.tiles2.TilesViewResolver" />
+	<bean name="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles/_template-tiles.xml</value>
+				<value>/WEB-INF/tiles/products-tiles.xml</value>
+				<value>/WEB-INF/tiles/categories-tiles.xml</value>
+				<value>/WEB-INF/tiles/manufacturers-tiles.xml</value>
+				<value>/WEB-INF/tiles/users-tiles.xml</value>
+				<value>/WEB-INF/tiles/comments-tiles.xml</value>
+				<value>/WEB-INF/tiles/carts-tiles.xml</value>
+				<value>/WEB-INF/tiles/ads-tiles.xml</value>
+				<value>/WEB-INF/tiles/reports-tiles.xml</value>
+			</list>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reports>
+	<report>
+		<display-name>Danh Sách Sản Phẩm</display-name>
+		<name>danhsachsanpham</name>
+		<link>Test/danhsachsanpham</link>
+	</report>
+	<report>
+		<display-name>Top 10 Sản Phẩm Bán Chạy</display-name>
+		<name>toptensp</name>
+		<link>Test/top10sanphambanchay</link>
+	</report>
+</reports>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition name="thanhvien" extends="template" >
+        <put-attribute name="sidebar" value="/_pages/user/sidebar_tv.jsp" />
+        <put-attribute name="navbar" value="/_pages/user/navbar_tv.jsp" />
+        <put-attribute name="content" value="/_pages/user/content_tv_view.jsp"/>
+        <put-attribute name="js" value="thanhvien_js" type="definition"/>     
+    </definition>
+    <definition name="thanhvien_js" extends="js_template">
+    	<put-attribute name="js_child" value="/_pages/user/user_js.jsp" />
+    </definition>
+    
+</tiles-definitions>

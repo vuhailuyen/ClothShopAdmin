@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="cloth_shop"/>
+  <table-filter match-name="binh_luan"/>
+  <table-filter match-name="quoc_gia"/>
+  <table-filter match-name="thanh_vien"/>
+  <table-filter match-name="tu_khoa_san_pham"/>
+  <table-filter match-name="nha_san_xuat"/>
+  <table-filter match-name="gio_hang"/>
+  <table-filter match-name="san_pham"/>
+  <table-filter match-name="doi_tuong"/>
+  <table-filter match-name="hinh_anh_san_pham"/>
+  <table-filter match-name="hinh_anh_thanh_vien"/>
+  <table-filter match-name="loai_san_pham"/>
+  <table-filter match-name="chi_tiet_gio_hang"/>
+</hibernate-reverse-engineering>

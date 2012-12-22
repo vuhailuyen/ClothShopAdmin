@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2012 10:34:07 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pojos.ThanhVien" table="thanh_vien" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="hoVaTen" type="string">
+            <column name="ho_va_ten" length="100" />
+        </property>
+        <property name="ngaySinh" type="date">
+            <column name="ngay_sinh" length="13" />
+        </property>
+        <property name="noiSong" type="string">
+            <column name="noi_song" length="100" />
+        </property>
+        <property name="tenDangNhap" type="string">
+            <column name="ten_dang_nhap" length="100" />
+        </property>
+        <property name="matKhau" type="string">
+            <column name="mat_khau" length="200" />
+        </property>
+        <property name="ngayCapNhat" type="date">
+            <column name="ngay_cap_nhat" length="13" />
+        </property>
+        <property name="tinhTrang" type="java.lang.Integer">
+            <column name="tinh_trang" />
+        </property>
+        <property name="ngayHetHanBan" type="date">
+            <column name="ngay_het_han_ban" length="13" />
+        </property>
+        <set name="hinhAnhThanhViens" inverse="true">
+            <key>
+                <column name="thanh_vien" />
+            </key>
+            <one-to-many class="pojos.HinhAnhThanhVien" />
+        </set>
+        <set name="binhLuans" inverse="true">
+            <key>
+                <column name="thanh_vien" />
+            </key>
+            <one-to-many class="pojos.BinhLuan" />
+        </set>
+        <set name="gioHangs" inverse="true">
+            <key>
+                <column name="thanh_vien" />
+            </key>
+            <one-to-many class="pojos.GioHang" />
+        </set>
+    </class>
+</hibernate-mapping>

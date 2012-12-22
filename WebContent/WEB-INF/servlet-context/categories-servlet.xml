@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context.xsd
+                            http://www.springframework.org/schema/mvc 
+                            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<context:component-scan base-package="controller.category" />
+
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="list">listController</prop>
+				<prop key="edit">editController</prop>
+				<prop key="add">addController</prop>
+				<prop key="delete">deleteController</prop>
+				<prop key="chart">chartController</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="listController" class="controller.category.ListCategoriesController" />
+	<bean id="editController" class="controller.category.EditCategoryController" />
+	<bean id="addController" class="controller.category.AddCategoryController" />
+	<bean id="deleteController" class="controller.category.DeleteCategoryController" />
+	<bean id="chartController" class="controller.category.CategoryChartsController" />
+
+	<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+		<property name="supportedMediaTypes" value="*/*;charset=UTF-8" />
+	</bean>
+
+</beans>

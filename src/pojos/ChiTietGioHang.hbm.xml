@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2012 10:34:07 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pojos.ChiTietGioHang" table="chi_tiet_gio_hang" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="gioHang" class="pojos.GioHang" fetch="select">
+            <column name="gio_hang" />
+        </many-to-one>
+        <many-to-one name="sanPham" class="pojos.SanPham" fetch="join" lazy="false">
+            <column name="san_pham" />
+        </many-to-one>
+        <property name="soLuong" type="java.lang.Integer">
+            <column name="so_luong" />
+        </property>
+        <property name="ngayDatHang" type="date">
+            <column name="ngay_dat_hang" length="13" />
+        </property>
+        <property name="tongTien" type="java.lang.Float">
+            <column name="tong_tien" precision="8" scale="8" />
+        </property>
+        <property name="tinhTrang" type="java.lang.Integer">
+            <column name="tinh_trang" />
+        </property>
+        <property name="daThanhToan" type="java.lang.Integer">
+            <column name="da_thanh_toan" />
+        </property>
+    </class>
+</hibernate-mapping>

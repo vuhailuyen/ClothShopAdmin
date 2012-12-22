@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.1.0.201210040510-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>WebContent/WEB-INF/servlet-context/products-servlet.xml</config>
+		<config>WebContent/WEB-INF/servlet-context/manufacturers-servlet.xml</config>
+		<config>WebContent/WEB-INF/servlet-context/comments-servlet.xml</config>
+		<config>WebContent/WEB-INF/servlet-context/carts-servlet.xml</config>
+		<config>WebContent/WEB-INF/servlet-context/ads-servlet.xml</config>
+		<config>WebContent/WEB-INF/applicationSecurity.xml</config>
+		<config>WebContent/WEB-INF/servlet-context/authentication-servlet.xml</config>
+	</configs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

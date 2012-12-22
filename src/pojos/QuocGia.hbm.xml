@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2012 10:34:07 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pojos.QuocGia" table="quoc_gia" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenQuocGia" type="string">
+            <column name="ten_quoc_gia" length="40" />
+        </property>
+        <set name="nhaSanXuats" inverse="true">
+            <key>
+                <column name="quoc_gia" />
+            </key>
+            <one-to-many class="pojos.NhaSanXuat" />
+        </set>
+    </class>
+</hibernate-mapping>

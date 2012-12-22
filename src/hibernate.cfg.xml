@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.password">onlyoneunited</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/cloth_shop</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.default_schema">public</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="show_sql">true</property>
+		<mapping resource="pojos/ThanhVien.hbm.xml" />
+		<mapping resource="pojos/LoaiSanPham.hbm.xml" />
+		<mapping resource="pojos/ChiTietGioHang.hbm.xml" />
+		<mapping resource="pojos/SanPham.hbm.xml" />
+		<mapping resource="pojos/BinhLuan.hbm.xml" />
+		<mapping resource="pojos/TuKhoaSanPham.hbm.xml" />
+		<mapping resource="pojos/HinhAnhSanPham.hbm.xml" />
+		<mapping resource="pojos/DoiTuong.hbm.xml" />
+		<mapping resource="pojos/QuocGia.hbm.xml" />
+		<mapping resource="pojos/NhaSanXuat.hbm.xml" />
+		<mapping resource="pojos/GioHang.hbm.xml" />
+		<mapping resource="pojos/HinhAnhThanhVien.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="css/buttons.css|js/jquery-1.7.1.min.js|js/jquery-ui-1.8.18.custom.min.js|js/jquery-ui-1.9.2.js|js/jquery.json-2.4.min.js|js/jquery.tablesorter.min.js|js/json.min.js|js/kendo.all.min.js|js/kendo.dataviz.min.js|js/kendo.web.min.js" kind="src" path="WebContent"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.WebProject">
+		<attributes>
+			<attribute name="hide" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.baseBrowserLibrary"/>
+	<classpathentry kind="con" path="org.eclipselabs.jsdt.jquery.core.CoflictLibrary_1.8"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.USER_LIBRARY/jquery-ui-1.9.2"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.USER_LIBRARY/json2"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

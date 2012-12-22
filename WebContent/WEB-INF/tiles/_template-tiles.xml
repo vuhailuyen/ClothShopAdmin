@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition name="template" template="/_pages/templates/templates_defs/general_template.jsp">
+        <put-attribute name="header" value="/_pages/templates/templates_contents/header_template.jsp" />
+        <put-attribute name="sidebar" value="/_pages/templates/templates_contents/sidebar_template.jsp" />
+        <put-attribute name="navbar" value="/_pages/templates/templates_contents/navbar_template.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="serverInfo" value="/_pages/templates/templates_contents/server_info.jsp" />
+        <put-attribute name="css" value="css_template" type="definition"/>
+        <put-attribute name="js" value="js_template" type="definition"/>
+    </definition>
+    <definition name="css_template" template="/_pages/templates/templates_defs/css_template.jsp">
+       <put-attribute name="css_base" value="/_pages/templates/templates_contents/css_template_base.jsp" />
+       <put-attribute name="css_child" value="" />
+    </definition>
+       
+    
+    <definition name="js_template" template="/_pages/templates/templates_defs/js_template.jsp">
+       <put-attribute name="js_base" value="/_pages/templates/templates_contents/js_template_base.jsp" />
+       <put-attribute name="js_child" value="" />
+    </definition>
+</tiles-definitions>

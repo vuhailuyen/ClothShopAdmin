@@ -1,0 +1,328 @@
+.tableA a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.tableA a:visited {
+	color: #999999;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.tableA a:active,.tableA a:hover {
+	color: #bd5a35;
+	text-decoration: underline;
+}
+
+.tableA {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 12px;
+	text-shadow: 1px 1px 0px #fff;
+	background: #eaebec;
+	margin: 5px;
+	border: #ccc 1px solid;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+
+.tableA th {
+	padding: 11px 15px 12px 15px;
+	border-top: 1px solid #fafafa;
+	border-bottom: 1px solid #e0e0e0;
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed),
+		to(#ebebeb) );
+	background: -moz-linear-gradient(top, #ededed, #ebebeb);
+}
+
+.tableA th:first-child {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.tableA tr:first-child th:first-child {
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.tableA tr:first-child th:last-child {
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.tableA tr {
+	text-align: center;
+	padding-left: 5px;
+}
+
+table tr td:first-child {
+	padding-left: 5px;
+	border-left: 0;
+}
+
+.tableA tr td {
+	width: 250px;
+	padding: 8px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb),
+		to(#fafafa) );
+	background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+.tableA tr.even td {
+	background: activeborder;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f9),
+		to(#f6f6f6) );
+	background: -moz-linear-gradient(top, #f8f8f9, #f6f6f6);
+}
+
+.tableA tr:last-child td {
+	border-bottom: 0;
+}
+
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.tableA tr:last-child td:last-child {
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.tableA tr:hover td {
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2),
+		to(#f0f0f0) );
+	background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+.tableA .id_col {
+	width: 35px;
+}
+
+.tableA .sp_col {
+	width: 255px;
+	color: saddlebrown;
+}
+
+.tableA .lsp_col {
+	width: 155px;
+}
+
+.tableA .nsx_col {
+	width: 105px;
+}
+
+.tableA .dt_col {
+	width: 95px;
+}
+
+.tableA .tt_col {
+	width: 100px;
+}
+
+.tableA .ncn_col {
+	width: 115px;
+}
+
+.tableA .gbd_col {
+	width: 105px;
+	font-family: sans-serif;
+	color: royalblue;
+}
+
+.tableA .ght_col {
+	width: 105px;
+	font-family: sans-serif;
+	font-style: italic;
+	color: midnightblue;
+}
+
+.tableA .left_col {
+	text-align: left;
+}
+
+.tableA .right_col {
+	text-align: right;
+}
+
+.tableA .center_col {
+	text-align: center;
+}
+
+.tableA .slx_col {
+	color: cadetblue;
+	font-style: italic;
+}
+
+.tableA .slb_col {
+	color: darkgreen;
+}
+
+.tableA .slt_col {
+	color: firebrick;
+	font-style: italic;
+	font-style: oblique;
+}
+
+/* Sortable tables */
+table.sortable thead {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.text_stlye_1 {
+	color: firebrick;
+	font-style: italic;
+	font-style: oblique;
+}
+
+.tableB tr td {
+	width: auto;
+	padding: 8px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb),
+		to(#fafafa) );
+	background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+#upload_form {
+	float: left;
+	padding: 20px;
+	width: 700px;
+}
+
+#preview {
+	background-color: #fff;
+	display: block;
+	float: right;
+	width: 200px;
+}
+
+#upload_form>div {
+	margin-bottom: 10px;
+}
+
+#speed,#remaining {
+	float: left;
+	width: 100px;
+}
+
+.clear_both {
+	clear: both;
+}
+
+input {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	font-size: 14pt;
+	padding: 5px 10px;
+}
+
+#image_file {
+	width: 400px;
+}
+
+#progress_info {
+	font-size: 10pt;
+}
+
+#fileinfo,#error,#error2,#abort,#warnsize {
+	color: #aaa;
+	display: none;
+	font-size: 10pt;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+#progress {
+	display: none;
+	float: left;
+	height: 14px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: -moz-linear-gradient(#66cc00, #4b9500);
+	background: -ms-linear-gradient(#66cc00, #4b9500);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66cc00),
+		color-stop(100%, #4b9500) );
+	background: -webkit-linear-gradient(#66cc00, #4b9500);
+	background: -o-linear-gradient(#66cc00, #4b9500);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66cc00',
+		endColorstr='#4b9500' );
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr='#66cc00', endColorstr='#4b9500')";
+	background: linear-gradient(#66cc00, #4b9500);
+}
+
+#progress_percent {
+	
+}
+
+#upload_response {
+	margin-top: 10px;
+	padding: 20px;
+	overflow: hidden;
+	display: none;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0 0 5px #ccc;
+	background: -moz-linear-gradient(#bbb, #eee);
+	background: -ms-linear-gradient(#bbb, #eee);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bbb),
+		color-stop(100%, #eee) );
+	background: -webkit-linear-gradient(#bbb, #eee);
+	background: -o-linear-gradient(#bbb, #eee);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbb',
+		endColorstr='#eee' );
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbb', endColorstr='#eee')";
+	background: linear-gradient(#bbb, #eee);
+}
+
+.imagetable {
+	width: 70%;
+}
+/*
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+            <tr><th>Task Details</th><th>Progress</th><th>Vital Task</th></tr><!-- Table Header -->
+
+            <tr><td>Create pretty table design</td><td>100%</td><td>Yes</td></tr><!-- Table Row -->
+            <tr class='even'><td>Take the dog for a walk</td><td>100%</td><td>Yes</td></tr><!-- Darker Table Row -->
+
+            <tr><td>Waste half the day on Twitter</td><td>20%</td><td>No</td></tr>
+            <tr class='even'><td>Feel inferior after viewing Dribble</td><td>80%</td><td>No</td></tr>
+
+            <tr><td>Wince at "to do" list</td><td>100%</td><td>Yes</td></tr>
+            <tr class='even'><td>Vow to complete personal project</td><td>23%</td><td>yes</td></tr>
+
+            <tr><td>Procrastinate</td><td>80%</td><td>No</td></tr>
+            <tr class='even'><td><a href="#yep-iit-doesnt-exist">Hyperlink Example</a></td><td>80%</td><td><a href="#inexistent-id">Another</a></td></tr>
+        </table>
+        */

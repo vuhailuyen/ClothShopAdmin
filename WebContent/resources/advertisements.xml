@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advertisements>
+	<ad>
+		<position>banner</position>
+		<link>http://static.guim.co.uk/sys-images/Sport/Pix/pictures/2012/8/20/1345497635224/Robin-van-Persie-in-actio-008.jpg
+		</link>
+		<date>20/12/2013</date>
+	</ad>
+	<ad>
+		<position>left</position>
+		<link>http://www.ottawacitizen.com/7625056.bin</link>
+		<date>20/12/2013</date>
+	</ad>
+	<ad>
+		<position>right</position>
+		<link>http://media.thethaovanhoa.vn/2012/10/27/19/24/1%20(7).jpg
+		</link>
+		<date>20/12/2013</date>
+	</ad>
+</advertisements>
